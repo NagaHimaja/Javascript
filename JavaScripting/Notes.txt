@@ -1,4 +1,4 @@
-1. this in inner function is same as this in outer function if we use => to declare inner function if not, if we use function keyword and declare then both this are different
+1. 'this' in inner function is same as 'this' in outer function if we use => to declare inner function if not, if we use function keyword and declare then both this are different
 
 2. destructuring/unpacking the values is easy
 ex:
@@ -11,9 +11,7 @@ showDetails(myObject);
 3. nested functions are common in javascript
 
 
-4. buit in methods are: alert(),confirm(),prompt(),isNaN(),isFinite(),parseInt(),parseFloat()
-
-,eval(),setTimeout(),clearTimeout(),setInterval(),clearInterval().
+4. buit in methods are: alert(),confirm(),prompt(),isNaN(),isFinite(),parseInt(),parseFloat(),eval(),setTimeout(),clearTimeout(),setInterval(),clearInterval().
 
 5. var->func scoped, let and const->block scoped.
 
