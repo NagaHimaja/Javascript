@@ -1,0 +1,48 @@
+1. this in inner function is same as this in outer function if we use => to declare inner function if not, if we use function keyword and declare then both this are different
+
+2. destructuring/unpacking the values is easy
+ex:
+let myObject = { name: "Mark", age: 25, country: "India" };
+function showDetails({ name, country }) {
+	console.log(name, country); // Mark India
+}
+showDetails(myObject);
+
+3. nested functions are common in javascript
+
+
+4. buit in methods are: alert(),confirm(),prompt(),isNaN(),isFinite(),parseInt(),parseFloat()
+
+,eval(),setTimeout(),clearTimeout(),setInterval(),clearInterval().
+
+5. var->func scoped, let and const->block scoped.
+
+6. Hoisting means all the variable and function declarations wherever they are present throughout the program, gets lifted and declared to the top of the program. Only the declaration and not the initialization gets hoisted to the top.
+
+Variables declared using 'let' and 'const' are not hoisted to the top of the program.
+
+7.innerHTML/textContent.
+
+8.static method display() is invoked using class name directly.
+
+9. object creation using obj literals/constructors. Object literal notation is a comma-separated list of name-value pairs wrapped inside curly braces. This promotes the encapsulation of data in a tidy package.
+
+10.After the object has been created, its variables or methods can be accessed in two different ways: dot operator, bracket operator
+
+11. for (let key in object)
+
+12. They are different built-in objects in JavaScript, Date, String, Math, RegEx, JSON
+
+13. Date is: Thu Jun 18, 2020, 22:17:36 GMT+0530 (format)
+
+    new Date(year, month, date, hours, mins, secs, 0000);
+
+14. The RegExp object can be constructed using either of the two ways: 
+  -> using RegExp constructor - let myPattern1 = new RegExp(pattern, modifiers); 
+  -> as a literal value by enclosing within forward-slash (/) - let myPattern2 = /pattern/modifiers 
+
+15. Why asynchronous 
+  
+
+
+

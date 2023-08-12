@@ -1,0 +1,81 @@
+<!-- Problem Statement: Observe the output to check the execution of built-in functions, as well as user-defined functions in which simple interest is calculated. 
+
+Activity: You are suggested to create one more function named to calculate Compound Interest. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Functions Demo</title>
+    <style>
+        body {
+            padding-top: 10px;
+        }
+        #compound{
+            color:brown;
+        }
+        #calc-box{
+            display: none;
+            background-color: aquamarine;
+        }
+        #backdrop{
+            
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+        }
+        #popup{
+            background-color: rgb(252, 249, 249);
+            width: fit-content;
+            height: 100px;
+            color:black;
+        }
+    </style>
+</head>
+
+<body class="container-fluid">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3>Functions</h3>
+        </div>
+
+        <div class="panel-body">
+            
+        </div>
+    </div>
+
+    <button onclick="execute();">Click Here to Calculate SI and CI</button><br><br>
+    <div id="calc-box">
+        <div id="principle" >0</div>
+        <div id="rate" >00</div>
+        <div id="no-of-years" >000</div>
+        
+        <hr>
+        <div id="calculated"></div>
+        <hr>
+        <h4>Calculated SI</h4>
+        <div id="cal-si">0000</div>
+        <hr>
+        <h4>Calculated CI</h4>
+        <div id="cal-ci">0000</div>
+        
+
+    </div>
+
+    <div id="not-calculated"></div>
+    
+    <div id="test"></div>
+<!--  
+    <div id="backdrop">
+        <div id="popup"> 
+            <h1 id="popup-msg">
+               
+            </h1>
+        </div>
+    </div>
+  -->  
+    <script src="script.js"></script>
+</body>
+
+</html>

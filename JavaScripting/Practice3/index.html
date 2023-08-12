@@ -1,0 +1,59 @@
+<!-- Problem Statement: Observe the output by confirming given body temperature value in Fahrenheit is higher or lower than the normal body temperature in Fahrenheit.
+
+Activity: You are suggested to assign values of body temperature in Celsius and then try to convert that temperature in Fahrenheit. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Operators Demo</title>
+    <style>
+        body {
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body class="container-fluid">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3>Body Temperature</h3>
+        </div>
+
+        <div class="panel-body">
+            <p>Temperature readings of your body are as follows
+                <span class="blinking">
+                    <script>
+
+                        let tempFahren = 99;
+                        const NORMAL_FAHREN = 98.6;
+                        let tempCelsius;
+                        const THIRTYTWO = 32;
+                        const TEMP = 1.8;
+                        tempCelsius = (tempFahren - THIRTYTWO) / TEMP;
+                        let fever = tempFahren > NORMAL_FAHREN;
+
+                        document.write("<br/>");
+                        document.write("Your temperature in Celsius  : " + tempCelsius);
+                        document.write("<br/>");
+                        document.write("Fever: " +fever);
+                        document.write("<br/>");
+                        document.write(typeof (fever));
+                        document.write("<br/>");
+                        document.write(typeof (tempFahren));
+                        document.write("<br/>");
+
+                        tempCelsius=39;
+                        tempFahren = (tempCelsius * TEMP )+ THIRTYTWO;
+                        document.write(`${tempCelsius} degree celsius temperature in Fahrenheit is ${tempFahren} `);
+
+
+
+                    </script>
+                </span>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
